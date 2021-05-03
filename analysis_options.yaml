@@ -1,0 +1,8 @@
+include: package:hexy_dart_lint/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - lib/generated/*
+    - lib/generated/intl/*
+    - lib/l10n/*
+    - lib/**/*.g.dart
