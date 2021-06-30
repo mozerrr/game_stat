@@ -1,22 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:game_stat/presentation/widgets/log_game_widget/last_game_widget.dart';
 
 class GamesHistoryScreen extends StatelessWidget {
+  const GamesHistoryScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      //title: 'Welcome to Flutter',
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text(
-          'Games History',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 22,
-          ),
-        ),
-      ),
-      primary: true,
-      body: Center(child: Text('as')),
+    return ListView(
+      children: const [
+        LastGameWidget(),
+        Text('other'),
+      ],
     );
   }
 }
